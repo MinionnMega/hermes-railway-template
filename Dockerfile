@@ -50,4 +50,4 @@ COPY scripts/entrypoint.sh /app/scripts/entrypoint.sh
 RUN chmod +x /app/scripts/entrypoint.sh
 
 ENTRYPOINT ["tini", "--"]
-CMD ["/app/scripts/entrypoint.sh"]
+CMD ["tail", "-f", "/dev/null"]
